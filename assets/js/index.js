@@ -1,7 +1,7 @@
 import { Leon, Lobo, Oso, Serpiente, Aguila } from "./Animales.js";
 
 let datosAnimales = (() => {
-  const url = "http://localhost:5500/assets/animales.json";
+  const url = "http://localhost:5500/animales.json";
   const request = async (url) => {
     const results = await fetch(url);
     const myArray = await results.json();
